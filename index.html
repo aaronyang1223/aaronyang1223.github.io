@@ -17,6 +17,21 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- The personal homepage has moved; keep existing files available. -->
+  <link rel="canonical" href="https://shiqiyang.com/">
+  <script>
+    (function () {
+      var target = new URL("https://shiqiyang.com/");
+      var hash = window.location.hash;
+      if (/^#(?:publications?|papers?)$/i.test(hash)) hash = "#research";
+      if (/^#(?:about|home|contact)$/i.test(hash)) hash = "#top";
+      target.search = window.location.search;
+      target.hash = hash;
+      window.location.replace(target.href);
+    }());
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=https://shiqiyang.com/"></noscript>
+
 
     <title>Shiqi Yang</title>
 

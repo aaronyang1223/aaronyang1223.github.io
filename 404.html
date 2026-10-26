@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiqi Yang — New homepage</title>
+  <link rel="canonical" href="https://shiqiyang.com/">
+  <script>
+    (function () {
+      var target = new URL("https://shiqiyang.com/");
+      var hash = window.location.hash;
+      if (/^#(?:publications?|papers?)$/i.test(hash)) hash = "#research";
+      if (/^#(?:about|home|contact)$/i.test(hash)) hash = "#top";
+      target.search = window.location.search;
+      target.hash = hash;
+      window.location.replace(target.href);
+    }());
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=https://shiqiyang.com/"></noscript>
+</head>
+<body>
+  <p>My homepage has moved to <a href="https://shiqiyang.com/">shiqiyang.com</a>.</p>
+</body>
+</html>
